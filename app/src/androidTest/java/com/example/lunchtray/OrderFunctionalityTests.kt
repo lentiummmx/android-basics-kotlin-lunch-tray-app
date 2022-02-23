@@ -49,22 +49,26 @@ class OrderFunctionalityTests : BaseTest() {
         // Select the cauliflower item
         onView(withId(R.id.cauliflower)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $7.00"))))
+            //.check(matches(withText(containsString("Subtotal: $7.00"))))
+            .check(matches(withText(containsString("Subtotal: £7.00"))))
 
         // Select the chili item
         onView(withId(R.id.chili)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $4.00"))))
+            //.check(matches(withText(containsString("Subtotal: $4.00"))))
+            .check(matches(withText(containsString("Subtotal: £4.00"))))
 
         // Select the pasta item
         onView(withId(R.id.pasta)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $5.50"))))
+            //.check(matches(withText(containsString("Subtotal: $5.50"))))
+            .check(matches(withText(containsString("Subtotal: £5.50"))))
 
         // Select the skillet item
         onView(withId(R.id.skillet)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $5.50"))))
+            //.check(matches(withText(containsString("Subtotal: $5.50"))))
+            .check(matches(withText(containsString("Subtotal: £5.50"))))
     }
 
     /**
@@ -81,22 +85,26 @@ class OrderFunctionalityTests : BaseTest() {
         // Select the salad item
         onView(withId(R.id.salad)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $2.50"))))
+            //.check(matches(withText(containsString("Subtotal: $2.50"))))
+            .check(matches(withText(containsString("Subtotal: £2.50"))))
 
         // Select the soup item
         onView(withId(R.id.soup)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $3.00"))))
+            //.check(matches(withText(containsString("Subtotal: $3.00"))))
+            .check(matches(withText(containsString("Subtotal: £3.00"))))
 
         // Select the potato item
         onView(withId(R.id.potatoes)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $2.00"))))
+            //.check(matches(withText(containsString("Subtotal: $2.00"))))
+            .check(matches(withText(containsString("Subtotal: £2.00"))))
 
         // Select the rice item
         onView(withId(R.id.rice)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $1.50"))))
+            //.check(matches(withText(containsString("Subtotal: $1.50"))))
+            .check(matches(withText(containsString("Subtotal: £1.50"))))
     }
 
     /**
@@ -113,17 +121,20 @@ class OrderFunctionalityTests : BaseTest() {
         // Select the salad item
         onView(withId(R.id.bread)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $0.50"))))
+            //.check(matches(withText(containsString("Subtotal: $0.50"))))
+            .check(matches(withText(containsString("Subtotal: £0.50"))))
 
         // Select the soup item
         onView(withId(R.id.berries)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $1.00"))))
+            //.check(matches(withText(containsString("Subtotal: $1.00"))))
+            .check(matches(withText(containsString("Subtotal: £1.00"))))
 
         // Select the potato item
         onView(withId(R.id.pickles)).perform(click())
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $0.50"))))
+            //.check(matches(withText(containsString("Subtotal: $0.50"))))
+            .check(matches(withText(containsString("Subtotal: £0.50"))))
     }
 
     /**
@@ -145,19 +156,22 @@ class OrderFunctionalityTests : BaseTest() {
         onView(withId(R.id.salad)).perform(click())
         // Check that subtotal has updated
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $9.50"))))
+            //.check(matches(withText(containsString("Subtotal: $9.50"))))
+            .check(matches(withText(containsString("Subtotal: £9.50"))))
         // Move to next fragment
         onView(withId(R.id.next_button)).perform(click())
         // Select accompaniment item
         onView(withId(R.id.bread)).perform(click())
         // Check that subtotal has updated
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $10.00"))))
+            //.check(matches(withText(containsString("Subtotal: $10.00"))))
+            .check(matches(withText(containsString("Subtotal: £10.00"))))
         // Move to next fragment
         onView(withId(R.id.next_button)).perform(click())
         // Check that subtotal in checkout is correct
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $10.00"))))
+            //.check(matches(withText(containsString("Subtotal: $10.00"))))
+            .check(matches(withText(containsString("Subtotal: £10.00"))))
     }
 
     /**
@@ -170,13 +184,16 @@ class OrderFunctionalityTests : BaseTest() {
         // Check subtotal. Note that this is already done in a separate test, but the other values
         // depend on it so this assertion is a sanity check
         onView(withId(R.id.subtotal))
-            .check(matches(withText(containsString("Subtotal: $10.00"))))
+            //.check(matches(withText(containsString("Subtotal: $10.00"))))
+            .check(matches(withText(containsString("Subtotal: £10.00"))))
         // Check tax
         onView(withId(R.id.tax))
-            .check(matches(withText(containsString("Tax: $0.80"))))
+            //.check(matches(withText(containsString("Tax: $0.80"))))
+            .check(matches(withText(containsString("Tax: £0.80"))))
         // Check total
         onView(withId(R.id.total))
-            .check(matches(withText(containsString("Total: $10.80"))))
+            //.check(matches(withText(containsString("Total: $10.80"))))
+            .check(matches(withText(containsString("Total: £10.80"))))
     }
 
     /**
@@ -195,7 +212,8 @@ class OrderFunctionalityTests : BaseTest() {
         // Start the order
         onView(withId(R.id.start_order_btn)).perform(click())
         // Make sure subtotal is zero
-        onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        //onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        onView(withText("Subtotal: £0.00")).check(matches(isDisplayed()))
     }
 
     /**
@@ -218,7 +236,8 @@ class OrderFunctionalityTests : BaseTest() {
         // Start the order
         onView(withId(R.id.start_order_btn)).perform(click())
         // Make sure subtotal is zero
-        onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        //onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        onView(withText("Subtotal: £0.00")).check(matches(isDisplayed()))
     }
 
     /**
@@ -245,7 +264,8 @@ class OrderFunctionalityTests : BaseTest() {
         // Start the order
         onView(withId(R.id.start_order_btn)).perform(click())
         // Make sure subtotal is zero
-        onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        //onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        onView(withText("Subtotal: £0.00")).check(matches(isDisplayed()))
     }
 
     /**
@@ -260,7 +280,8 @@ class OrderFunctionalityTests : BaseTest() {
         // Start the order
         onView(withId(R.id.start_order_btn)).perform(click())
         // Make sure subtotal is zero
-        onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        //onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
+        onView(withText("Subtotal: £0.00")).check(matches(isDisplayed()))
     }
 
     /**

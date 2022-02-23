@@ -50,7 +50,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.cauliflower_description))
             .check(matches(withText(containsString("Whole cauliflower"))))
         onView(withId(R.id.cauliflower_price))
-            .check(matches(withText(containsString("$7.00"))))
+            //.check(matches(withText(containsString("$7.00"))))
+            .check(matches(withText(containsString("£7.00"))))
 
         // Check the chili item
         onView(withId(R.id.chili))
@@ -58,7 +59,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.chili_description))
             .check(matches(withText(containsString("Black beans"))))
         onView(withId(R.id.chili_price))
-            .check(matches(withText(containsString("$4.00"))))
+            //.check(matches(withText(containsString("$4.00"))))
+            .check(matches(withText(containsString("£4.00"))))
 
         // Check the pasta item
         onView(withId(R.id.pasta))
@@ -66,7 +68,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.pasta_description))
             .check(matches(withText(containsString("Penne pasta"))))
         onView(withId(R.id.pasta_price))
-            .check(matches(withText(containsString("$5.50"))))
+            //.check(matches(withText(containsString("$5.50"))))
+            .check(matches(withText(containsString("£5.50"))))
 
         // Check the skillet item
         onView(withId(R.id.skillet))
@@ -74,7 +77,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.skillet_description))
             .check(matches(withText(containsString("Seasonal vegetables"))))
         onView(withId(R.id.skillet_price))
-            .check(matches(withText(containsString("$5.50"))))
+            //.check(matches(withText(containsString("$5.50"))))
+            .check(matches(withText(containsString("£5.50"))))
     }
 
     /**
@@ -95,7 +99,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.salad_description))
             .check(matches(withText(containsString("Heirloom tomatoes"))))
         onView(withId(R.id.salad_price))
-            .check(matches(withText(containsString("$2.50"))))
+            //.check(matches(withText(containsString("$2.50"))))
+            .check(matches(withText(containsString("£2.50"))))
 
         // Check the soup item
         onView(withId(R.id.soup))
@@ -103,7 +108,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.soup_description))
             .check(matches(withText(containsString("Roasted butternut squash"))))
         onView(withId(R.id.soup_price))
-            .check(matches(withText(containsString("$3.00"))))
+            //.check(matches(withText(containsString("$3.00"))))
+            .check(matches(withText(containsString("£3.00"))))
 
         // Check the potato item
         onView(withId(R.id.potatoes))
@@ -111,7 +117,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.potato_description))
             .check(matches(withText(containsString("Marble potatoes"))))
         onView(withId(R.id.potato_price))
-            .check(matches(withText(containsString("$2.00"))))
+            //.check(matches(withText(containsString("$2.00"))))
+            .check(matches(withText(containsString("£2.00"))))
 
         // Check the rice item
         onView(withId(R.id.rice))
@@ -119,7 +126,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.rice_description))
             .check(matches(withText(containsString("Rice, coconut milk"))))
         onView(withId(R.id.rice_price))
-            .check(matches(withText(containsString("$1.50"))))
+            //.check(matches(withText(containsString("$1.50"))))
+            .check(matches(withText(containsString("£1.50"))))
     }
 
     /**
@@ -140,7 +148,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.bread_description))
             .check(matches(withText(containsString("Fresh baked"))))
         onView(withId(R.id.bread_price))
-            .check(matches(withText(containsString("$0.50"))))
+            //.check(matches(withText(containsString("$0.50"))))
+            .check(matches(withText(containsString("£0.50"))))
 
         // Check the berries item
         onView(withId(R.id.berries))
@@ -148,7 +157,8 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.berries_description))
             .check(matches(withText(containsString("Strawberries"))))
         onView(withId(R.id.berries_price))
-            .check(matches(withText(containsString("$1.00"))))
+            //.check(matches(withText(containsString("$1.00"))))
+            .check(matches(withText(containsString("£1.00"))))
 
         // Check the pickle item
         onView(withId(R.id.pickles))
@@ -156,6 +166,7 @@ class MenuContentTests : BaseTest() {
         onView(withId(R.id.pickles_description))
             .check(matches(withText(containsString("Pickled cucumbers"))))
         onView(withId(R.id.pickles_price))
-            .check(matches(withText(containsString("$0.50"))))
+            //.check(matches(withText(containsString("$0.50"))))
+            .check(matches(withText(containsString("£0.50"))))
     }
 }
